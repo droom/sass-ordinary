@@ -1,0 +1,18 @@
+.sc{
+	font-variant: small-caps;
+	text-transform: lowercase;
+	letter-spacing: 0.02em;
+}
+
+article.intro > p:first-of-type:first-letter {
+	float: left;
+  margin: 0 0.1em 0 0;
+  font-size: 4.2em;
+  line-height: .7em;
+  display: block;
+  padding: .1em;
+  color: pink;
+  border-radius: 2px;
+  background-image: linear-gradient(0deg, #000000 16.67%, #ffc0cb 16.67%, #ffc0cb 50%, #000000 50%, #000000 66.67%, #ffc0cb 66.67%, #ffc0cb 100%);
+  background-size: 6.00px 6.00px;
+}

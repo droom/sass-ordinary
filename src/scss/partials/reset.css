@@ -1,0 +1,9 @@
+body, p, h1, h2, h3, small {
+  padding: 0;
+  margin: 0;
+}
+
+
+small{
+  display: block;
+}

@@ -1,0 +1,133 @@
+body, p, h1, h2, h3, small {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "CircularStd-Medium";
+  src: url(../fonts/CircularStd-Medium.woff2) format("woff2");
+}
+@font-face {
+  font-family: "HeldaneText-Regular";
+  src: url(../fonts/HeldaneText-Regular.woff2) format("woff2");
+}
+@font-face {
+  font-family: "HeldaneText-RegularItalic";
+  src: url(../fonts/HeldaneText-RegularItalic.woff2) format("woff2");
+}
+@font-face {
+  font-family: "HeldaneText-Medium";
+  src: url(../fonts/HeldaneText-Medium.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Sohne-Regular";
+  src: url(../fonts/Sohne-Regular.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Sohne-Medium";
+  src: url(../fonts/Sohne-Medium.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Sohne-Bold";
+  src: url(../fonts/Sohne-Bold.woff2) format("woff2");
+}
+h1 {
+  font-family: "HeldaneText-Regular", monospace;
+  font-weight: 500;
+}
+
+h3 {
+  font-family: "HeldaneText-Regular", monospace;
+  font-weight: 500;
+}
+
+p {
+  font-family: "HeldaneText-Regular", monospace;
+  font-weight: 500;
+}
+
+h3 em,
+h1 em {
+  font-family: "HeldaneText-RegularItalic";
+  font-weight: 500;
+}
+
+small {
+  font-family: "Sohne-Medium", monospace;
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+p {
+  font-size: 21px;
+  line-height: 27px;
+}
+
+h3 {
+  font-size: 38px;
+  line-height: 43px;
+}
+
+.sc {
+  font-variant: small-caps;
+  text-transform: lowercase;
+  letter-spacing: 0.02em;
+}
+
+article.intro > p:first-of-type:first-letter {
+  float: left;
+  margin: 0 0.1em 0 0;
+  font-size: 4.2em;
+  line-height: 0.7em;
+  display: block;
+  padding: 0.1em;
+  color: pink;
+  border-radius: 2px;
+  background-image: linear-gradient(0deg, #000000 16.67%, #ffc0cb 16.67%, #ffc0cb 50%, #000000 50%, #000000 66.67%, #ffc0cb 66.67%, #ffc0cb 100%);
+  background-size: 6px 6px;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 20px;
+  align-items: baseline;
+  grid-template-columns: 20px 1fr 1fr 20px 1fr 1fr 1fr 1fr 1fr 20px;
+  grid-template-areas: "a a a a b b b b" "a a a a b b b b" "c c c c d d d d" "c c c c d d d d";
+}
+
+h1, h3, article {
+  grid-column-start: 5;
+  grid-column-end: 10;
+}
+
+.grid aside {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+}
+
+body {
+  background: pink;
+}
+
+.red {
+  color: #ff6600;
+}
+
+h1 {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+h3 {
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+
+p + p {
+  margin-top: 12px;
+}

@@ -1,0 +1,27 @@
+// grid
+
+.grid{
+	display: grid;
+	grid-gap: 20px;
+	align-items: baseline;
+	grid-template-columns: 20px 1fr 1fr 20px 1fr 1fr 1fr 1fr 1fr 20px;
+
+
+  grid-template-areas:
+    "a a a a b b b b"
+    "a a a a b b b b"
+    "c c c c d d d d"
+    "c c c c d d d d";
+
+}
+
+h1, h3, article{
+	grid-column-start: 5;
+	grid-column-end: 10;
+}
+
+.grid aside{
+  grid-column-start: 2;
+  grid-column-end: 4;
+	grid-row-start: 1;
+}
